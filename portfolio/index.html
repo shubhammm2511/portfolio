@@ -1,0 +1,1074 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Shubham Kumar Tiwary — AI Engineer & Data Scientist. Building production-grade AI systems, RAG pipelines, agentic workflows, and ML solutions. Open to remote opportunities.">
+    <meta name="keywords" content="AI Engineer, Data Scientist, Machine Learning, RAG, LangChain, LangGraph, Portfolio, Shubham Kumar Tiwary">
+    <meta name="author" content="Shubham Kumar Tiwary">
+    <title>Shubham Kumar Tiwary — AI Engineer & Data Scientist</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Devicon for Tech Stack Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/devicon.min.css">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <canvas id="particles-canvas"></canvas>
+
+    <!-- 3D/4D INTRO LOADER -->
+    <div id="loader-wrapper">
+        <div class="loader-container">
+            <div class="loader-3d-box">
+                <div class="cube outer-cube">
+                    <div class="face front"></div>
+                    <div class="face back"></div>
+                    <div class="face left"></div>
+                    <div class="face right"></div>
+                    <div class="face top"></div>
+                    <div class="face bottom"></div>
+                </div>
+                <div class="cube inner-cube">
+                    <div class="face front"></div>
+                    <div class="face back"></div>
+                    <div class="face left"></div>
+                    <div class="face right"></div>
+                    <div class="face top"></div>
+                    <div class="face bottom"></div>
+                </div>
+            </div>
+            <div class="loader-title">SHUBHAM KUMAR TIWARY</div>
+            <div class="loader-subtitle">AI Engineer & Data Scientist</div>
+            <div class="loader-progress-bar-wrapper">
+                <div class="loader-progress-bar" id="loaderProgressBar"></div>
+            </div>
+            <div class="loader-percentage" id="loaderPercentage">0%</div>
+            <div class="loader-status" id="loaderStatus">Initializing neural matrix...</div>
+        </div>
+    </div>
+
+    <div id="app-wrapper">
+
+        <!-- Scroll Progress Bar -->
+        <div class="scroll-progress" id="scrollProgress"></div>
+
+    <!-- ═══════════════════════════════════════════ -->
+    <!-- NAVBAR -->
+    <!-- ═══════════════════════════════════════════ -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo">
+                <span class="logo-first">Shubham Kumar</span> <span class="logo-last">Tiwary</span>
+            </a>
+            <button class="menu-toggle" aria-label="Toggle menu">
+                <span class="hamburger"></span>
+            </button>
+            <ul class="nav-menu">
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#certifications" class="nav-link">Certifications</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+                <li>
+                    <a href="mailto:shubhamtiwari2511@outlook.com" class="nav-cta">
+                        <i class="fas fa-paper-plane"></i> Hire Me
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- ═══════════════════════════════════════════ -->
+    <!-- HERO SECTION -->
+    <!-- ═══════════════════════════════════════════ -->
+    <section id="hero">
+
+        <!-- Floating Geometric Shapes -->
+        <div class="geo-shape shape-1" data-speed="0.03">
+            <svg width="80" height="80" viewBox="0 0 80 80" fill="none">
+                <polygon points="40,5 75,65 5,65" stroke="rgba(0,240,255,0.15)" stroke-width="1" fill="none"/>
+            </svg>
+        </div>
+        <div class="geo-shape shape-2" data-speed="0.05">
+            <svg width="60" height="60" viewBox="0 0 60 60" fill="none">
+                <rect x="10" y="10" width="40" height="40" stroke="rgba(139,92,246,0.15)" stroke-width="1" fill="none" transform="rotate(45 30 30)"/>
+            </svg>
+        </div>
+        <div class="geo-shape shape-3" data-speed="0.02">
+            <svg width="100" height="100" viewBox="0 0 100 100" fill="none">
+                <circle cx="50" cy="50" r="40" stroke="rgba(244,114,182,0.1)" stroke-width="1" fill="none"/>
+                <circle cx="50" cy="50" r="25" stroke="rgba(244,114,182,0.08)" stroke-width="1" fill="none"/>
+            </svg>
+        </div>
+        <div class="geo-shape shape-4" data-speed="0.04">
+            <svg width="70" height="70" viewBox="0 0 70 70" fill="none">
+                <polygon points="35,5 65,25 65,55 35,65 5,55 5,25" stroke="rgba(0,240,255,0.12)" stroke-width="1" fill="none"/>
+            </svg>
+        </div>
+
+        <div class="hero-content">
+            <div class="hero-badge fade-element">
+                <i class="fas fa-microchip"></i>
+                <span>Open to Office + Remote Opportunities</span>
+            </div>
+
+            <h1 class="hero-title fade-element" data-delay="0.1">
+                Hi, I'm <span class="gradient-text">Shubham</span>
+            </h1>
+
+            <div class="hero-subtitle fade-element" data-delay="0.2">
+                <span class="typing-prefix">I build </span>
+                <span id="typing-text"></span><span class="typing-cursor">|</span>
+            </div>
+
+            <p class="hero-tagline fade-element" data-delay="0.3">
+                AI/ML Engineer crafting production-grade AI systems, RAG pipelines,
+                agentic workflows, and intelligent data solutions.
+            </p>
+
+            <div class="hero-actions fade-element" data-delay="0.4">
+                <a href="#projects" class="btn btn-primary">
+                    <i class="fas fa-rocket"></i> View My Work
+                </a>
+                <a href="#contact" class="btn btn-outline">
+                    <i class="fas fa-envelope"></i> Get In Touch
+                </a>
+            </div>
+
+            <div class="social-links fade-element" data-delay="0.5">
+                <a href="https://github.com/shubhammm2511" target="_blank" rel="noopener" aria-label="GitHub" class="social-link">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://linkedin.com/in/shubham251141" target="_blank" rel="noopener" aria-label="LinkedIn" class="social-link">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="mailto:shubhamtiwari2511@outlook.com" aria-label="Email" class="social-link">
+                    <i class="fas fa-envelope"></i>
+                </a>
+                <a href="tel:+918236028933" aria-label="Phone" class="social-link">
+                    <i class="fas fa-phone"></i>
+                </a>
+            </div>
+        </div>
+
+        <div class="scroll-indicator">
+            <span>Scroll to explore</span>
+            <div class="scroll-arrow">
+                <i class="fas fa-chevron-down"></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════ -->
+    <!-- ABOUT SECTION -->
+    <!-- ═══════════════════════════════════════════ -->
+    <section id="about" class="glow-section">
+        <h2 class="section-title fade-element">
+            <span class="gradient-text">About Me</span>
+        </h2>
+        <p class="section-subtitle fade-element">Turning complex data into intelligent systems</p>
+
+        <div class="about-grid">
+            <div class="about-image-wrapper fade-element slide-left">
+                <div class="about-image-container glass">
+                    <img src="assets/profile_new.jpg" alt="Profile" style="width: 100%; height: 100%; object-fit: cover; border-radius: inherit; display: block; position: relative; z-index: 2;">
+                    <div class="image-glow"></div>
+                    <div class="image-border-glow"></div>
+                </div>
+                <div class="about-status">
+                    <span class="status-dot"></span>
+                    Available for work
+                </div>
+            </div>
+
+            <div class="about-card glass tilt-card fade-element slide-right">
+                <div class="about-text">
+                    <p>
+                        I'm an <strong>AI/ML Engineer</strong> and recent <strong>B.Tech graduate in Computer Science (Data Science)</strong> from the University of Petroleum and Energy Studies, Dehradun (2022–2026).
+                    </p>
+                    <p>
+                        I specialize in building <strong>production-grade AI systems</strong> with full observability instrumentation, structured multi-model benchmarks, and automated data workflows. My experience spans <strong>agentic frameworks</strong> (LangChain, LangGraph), <strong>local LLM inference</strong> (Ollama), <strong>vector databases</strong>, <strong>AI agent orchestration</strong>, and <strong>cloud deployment</strong>.
+                    </p>
+                    <p>
+                        I'm passionate about turning complex data challenges into intelligent, scalable solutions — from RAG chatbots with LangSmith tracing to real-time log analyzers with multi-step agent workflows.
+                    </p>
+                </div>
+
+                <div class="about-details">
+                    <div class="detail-item">
+                        <i class="fas fa-graduation-cap"></i>
+                        <div>
+                            <strong>B.Tech CS (Data Science)</strong>
+                            <span>UPES, Dehradun</span>
+                        </div>
+                    </div>
+                    <div class="detail-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <strong>India</strong>
+                            <span>Open to Office + Remote</span>
+                        </div>
+                    </div>
+                    <div class="detail-item">
+                        <i class="fas fa-calendar-alt"></i>
+                        <div>
+                            <strong>Class of 2026</strong>
+                            <span>Fresh Graduate</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="stats-grid">
+            <div class="stat-item glass tilt-card fade-element" data-delay="0">
+                <div class="stat-icon"><i class="fas fa-project-diagram"></i></div>
+                <span class="stat-number" data-target="11">0</span>
+                <span class="stat-label">Projects Built</span>
+            </div>
+            <div class="stat-item glass tilt-card fade-element" data-delay="0.1">
+                <div class="stat-icon"><i class="fas fa-cogs"></i></div>
+                <span class="stat-number" data-target="35">0</span>
+                <span class="stat-label">Technologies</span>
+            </div>
+            <div class="stat-item glass tilt-card fade-element" data-delay="0.2">
+                <div class="stat-icon"><i class="fas fa-certificate"></i></div>
+                <span class="stat-number" data-target="4">0</span>
+                <span class="stat-label">Certifications</span>
+            </div>
+            <div class="stat-item glass tilt-card fade-element" data-delay="0.3">
+                <div class="stat-icon"><i class="fas fa-briefcase"></i></div>
+                <span class="stat-number" data-target="3">0</span>
+                <span class="stat-label">Internships</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════ -->
+    <!-- EXPERIENCE SECTION -->
+    <!-- ═══════════════════════════════════════════ -->
+    <section id="experience" class="glow-section">
+        <h2 class="section-title fade-element">
+            <span class="gradient-text">Experience</span>
+        </h2>
+        <p class="section-subtitle fade-element">Where I've honed my skills</p>
+
+        <div class="timeline">
+            <!-- Intellipaat -->
+            <div class="timeline-item slide-left">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content glass tilt-card">
+                    <div class="timeline-header">
+                        <div class="company-info">
+                            <h3>Intern Trainee</h3>
+                            <span class="company-badge intellipaat purple">
+                                <i class="fas fa-building"></i> Intellipaat Software Solution
+                            </span>
+                        </div>
+                        <span class="timeline-date">
+                            <i class="fas fa-calendar"></i> Jan 2026 – May 2026
+                        </span>
+                        <span class="timeline-location">
+                            <i class="fas fa-map-marker-alt"></i> Bengaluru, India (On-site)
+                        </span>
+                    </div>
+                    <ul class="timeline-details">
+                        <li>Troubleshoot difficult technical problems within specified deadlines.</li>
+                        <li>Provide online support or over the call for our learners.</li>
+                        <li>Provide teaching assistance to trainers by conducting assignments / revision sessions.</li>
+                        <li>Do a continuous course QA.</li>
+                        <li>Audit the quality of work performed and provide constructive feedback when necessary.</li>
+                    </ul>
+                    <div class="tech-icons">
+                        <span class="tech-icon-item" title="Python"><i class="devicon-python-plain"></i></span>
+                        <span class="tech-icon-item" title="Troubleshooting"><i class="fas fa-bug"></i></span>
+                        <span class="tech-icon-item" title="Quality Assurance"><i class="fas fa-check-circle"></i></span>
+                        <span class="tech-icon-item" title="Technical Support"><i class="fas fa-headset"></i></span>
+                        <span class="tech-icon-item" title="Data Science"><i class="fas fa-chart-line"></i></span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- IBM -->
+            <div class="timeline-item slide-right">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content glass tilt-card">
+                    <div class="timeline-header">
+                        <div class="company-info">
+                            <h3>AI/ML Project Intern</h3>
+                            <span class="company-badge ibm">
+                                <i class="fas fa-building"></i> IBM
+                            </span>
+                        </div>
+                        <span class="timeline-date">
+                            <i class="fas fa-calendar"></i> May 2025 – July 2025
+                        </span>
+                        <span class="timeline-location">
+                            <i class="fas fa-map-marker-alt"></i> Remote
+                        </span>
+                    </div>
+                    <ul class="timeline-details">
+                        <li>Built a web-based ML application for <strong>credit risk classification</strong>; implemented and benchmarked Logistic Regression, Random Forest, and XGBoost — tracking accuracy, precision, recall, and F1-score across all models.</li>
+                        <li>Achieved <strong>82.4% accuracy</strong> with Random Forest; produced stakeholder-ready evaluation reports with comparative model findings, directly mirroring Ground Truth and Evals workflows.</li>
+                        <li>Designed and deployed <strong>Power BI and Tableau dashboards</strong> to visualize model outputs, track KPI trends, and surface data insights.</li>
+                        <li>Deployed interactive <strong>Streamlit prediction interface</strong>; containerized with Docker and hosted on Render for real-time inference.</li>
+                    </ul>
+                    <div class="tech-icons">
+                        <span class="tech-icon-item" title="Python"><i class="devicon-python-plain"></i></span>
+                        <span class="tech-icon-item" title="Scikit-learn"><i class="devicon-scikitlearn-plain"></i></span>
+                        <span class="tech-icon-item" title="Streamlit"><i class="devicon-streamlit-plain"></i></span>
+                        <span class="tech-icon-item" title="Docker"><i class="devicon-docker-plain"></i></span>
+                        <span class="tech-icon-item" title="Power BI"><i class="fas fa-chart-bar"></i></span>
+                        <span class="tech-icon-item" title="Tableau"><i class="fas fa-chart-pie"></i></span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CodeClause -->
+            <div class="timeline-item slide-left">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content glass tilt-card">
+                    <div class="timeline-header">
+                        <div class="company-info">
+                            <h3>Data Science Intern</h3>
+                            <span class="company-badge codeclause">
+                                <i class="fas fa-building"></i> CodeClause
+                            </span>
+                        </div>
+                        <span class="timeline-date">
+                            <i class="fas fa-calendar"></i> May 2025 – Aug 2025
+                        </span>
+                        <span class="timeline-location">
+                            <i class="fas fa-map-marker-alt"></i> Remote
+                        </span>
+                    </div>
+                    <ul class="timeline-details">
+                        <li>Designed an end-to-end ML pipeline for <strong>airline flight delay prediction</strong>; ran structured evaluations across Logistic Regression, Random Forest, and XGBoost on a 2,000-record held-out test set.</li>
+                        <li>Benchmarked all three classifiers reporting <strong>macro and weighted averages</strong> of precision, recall, and F1-score — direct analog to Ground Truth creation and model benchmarking workflows.</li>
+                        <li>Built <strong>Power BI and Tableau dashboards</strong> to track prediction KPIs and performance trends; automated data ingestion pipelines.</li>
+                        <li>Deployed production model via <strong>Streamlit</strong> for real-time inference; documented evaluation findings in structured technical reports.</li>
+                    </ul>
+                    <div class="tech-icons">
+                        <span class="tech-icon-item" title="Python"><i class="devicon-python-plain"></i></span>
+                        <span class="tech-icon-item" title="Pandas"><i class="devicon-pandas-plain"></i></span>
+                        <span class="tech-icon-item" title="NumPy"><i class="devicon-numpy-plain"></i></span>
+                        <span class="tech-icon-item" title="Streamlit"><i class="devicon-streamlit-plain"></i></span>
+                        <span class="tech-icon-item" title="Power BI"><i class="fas fa-chart-bar"></i></span>
+                        <span class="tech-icon-item" title="Tableau"><i class="fas fa-chart-pie"></i></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════ -->
+    <!-- PROJECTS SECTION -->
+    <!-- ═══════════════════════════════════════════ -->
+    <section id="projects" class="glow-section">
+        <h2 class="section-title fade-element">
+            <span class="gradient-text">Projects</span>
+        </h2>
+        <p class="section-subtitle fade-element">Crafting intelligent systems from concept to deployment</p>
+
+        <div class="project-filters fade-element">
+            <button class="filter-btn active" data-filter="all">
+                <i class="fas fa-layer-group"></i> All
+            </button>
+            <button class="filter-btn" data-filter="agents">
+                <i class="fas fa-robot"></i> AI Agents
+            </button>
+            <button class="filter-btn" data-filter="nlp">
+                <i class="fas fa-language"></i> NLP / LLM
+            </button>
+            <button class="filter-btn" data-filter="cv">
+                <i class="fas fa-eye"></i> Computer Vision
+            </button>
+            <button class="filter-btn" data-filter="fullstack">
+                <i class="fas fa-server"></i> Full Stack
+            </button>
+        </div>
+
+        <div class="projects-grid">
+
+            <!-- Project 1: MedQuery AI -->
+            <div class="project-card glass tilt-card fade-element" data-category="nlp agents">
+                <div class="project-number">01</div>
+                <div class="project-header">
+                    <div class="project-icon"><i class="fas fa-stethoscope"></i></div>
+                    <div class="project-links">
+                        <a href="https://github.com/shubhammm2511" target="_blank" class="project-link-icon" title="GitHub"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+                <h3 class="project-title">MedQuery AI</h3>
+                <p class="project-label">RAG Chatbot with Full Pipeline Observability</p>
+                <p class="project-description">
+                    Built an end-to-end RAG-based medical Q&A chatbot using LangChain and OpenAI LLMs; instrumented every retrieval and generation step with LangSmith tracing. Created Ground Truth evaluation datasets, benchmarked RAG response quality, and built analytics dashboards.
+                </p>
+                <div class="project-tags">
+                    <span class="tag tag-cyan">LLM Evaluation</span>
+                    <span class="tag tag-purple">AI Observability</span>
+                    <span class="tag tag-pink">Ground Truth</span>
+                </div>
+                <div class="project-tech">
+                    <span title="Python"><i class="devicon-python-plain"></i></span>
+                    <span title="Flask"><i class="devicon-flask-original"></i></span>
+                    <span title="Docker"><i class="devicon-docker-plain"></i></span>
+                    <span title="AWS"><i class="devicon-amazonwebservices-plain-wordmark"></i></span>
+                    <span title="Power BI"><i class="fas fa-chart-bar"></i></span>
+                </div>
+            </div>
+
+            <!-- Project 2: LogPulse -->
+            <div class="project-card glass tilt-card fade-element" data-category="agents" data-delay="0.1">
+                <div class="project-number">02</div>
+                <div class="project-header">
+                    <div class="project-icon"><i class="fas fa-wave-square"></i></div>
+                    <div class="project-links">
+                        <a href="https://github.com/shubhammm2511" target="_blank" class="project-link-icon" title="GitHub"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+                <h3 class="project-title">LogPulse</h3>
+                <p class="project-label">Real-Time AI Log Analyzer with Agentic Orchestration</p>
+                <p class="project-description">
+                    Built a real-time log analysis application streaming live system logs into an LLM pipeline; automatically classifies log severity, detects anomaly patterns, and generates natural language RCA summaries. Integrated AI agent workflow using LangGraph for multi-step log triage.
+                </p>
+                <div class="project-tags">
+                    <span class="tag tag-cyan">Agentic Workflows</span>
+                    <span class="tag tag-purple">AI Agents</span>
+                    <span class="tag tag-pink">Real-Time Analytics</span>
+                </div>
+                <div class="project-tech">
+                    <span title="Python"><i class="devicon-python-plain"></i></span>
+                    <span title="FastAPI"><i class="devicon-fastapi-plain"></i></span>
+                    <span title="Docker"><i class="devicon-docker-plain"></i></span>
+                    <span title="Streamlit"><i class="devicon-streamlit-plain"></i></span>
+                </div>
+            </div>
+
+            <!-- Project 3: LLM Speed Lab -->
+            <div class="project-card glass tilt-card fade-element" data-category="nlp" data-delay="0.2">
+                <div class="project-number">03</div>
+                <div class="project-header">
+                    <div class="project-icon"><i class="fas fa-tachometer-alt"></i></div>
+                    <div class="project-links">
+                        <a href="https://github.com/shubhammm2511" target="_blank" class="project-link-icon" title="GitHub"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+                <h3 class="project-title">LLM Speed Lab</h3>
+                <p class="project-label">Local SLM Benchmarking App</p>
+                <p class="project-description">
+                    Built a local model evaluation app to benchmark 3–7B parameter LLMs (Llama 3.2, Phi-4, Mistral 7B) using Ollama; measured tokens/sec, time to first token (TTFT), and peak memory usage. Produced detailed technical evaluation reports with benchmark charts and model recommendations.
+                </p>
+                <div class="project-tags">
+                    <span class="tag tag-cyan">Model Benchmarking</span>
+                    <span class="tag tag-purple">Structured Evals</span>
+                    <span class="tag tag-pink">Performance Analysis</span>
+                </div>
+                <div class="project-tech">
+                    <span title="Python"><i class="devicon-python-plain"></i></span>
+                    <span title="Streamlit"><i class="devicon-streamlit-plain"></i></span>
+                    <span title="Pandas"><i class="devicon-pandas-plain"></i></span>
+                    <span title="Matplotlib"><i class="devicon-matplotlib-plain"></i></span>
+                </div>
+            </div>
+
+            <!-- Project 4: SentimentScope -->
+            <div class="project-card glass tilt-card fade-element" data-category="nlp">
+                <div class="project-number">04</div>
+                <div class="project-header">
+                    <div class="project-icon"><i class="fas fa-comment-dots"></i></div>
+                    <div class="project-links">
+                        <a href="https://github.com/shubhammm2511" target="_blank" class="project-link-icon" title="GitHub"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+                <h3 class="project-title">SentimentScope</h3>
+                <p class="project-label">Arabic Tweet Sentiment Analysis using BERT</p>
+                <p class="project-description">
+                    Fine-tuned multiple Arabic BERT variants (AraBERT, CAMeL-BERT) for sentiment classification; automated full evaluation workflow covering data cleaning, tokenization, training, and cross-model benchmarking. Produced comparative technical reports identifying the best-performing configuration.
+                </p>
+                <div class="project-tags">
+                    <span class="tag tag-cyan">NLP Evaluation</span>
+                    <span class="tag tag-purple">LLM Fine-Tuning</span>
+                    <span class="tag tag-pink">Multi-Model Benchmarking</span>
+                </div>
+                <div class="project-tech">
+                    <span title="Python"><i class="devicon-python-plain"></i></span>
+                    <span title="PyTorch"><i class="devicon-pytorch-plain"></i></span>
+                    <span title="Pandas"><i class="devicon-pandas-plain"></i></span>
+                </div>
+            </div>
+
+            <!-- Project 5: MCP Tool-Calling Agent -->
+            <div class="project-card glass tilt-card fade-element" data-category="agents" data-delay="0.1">
+                <div class="project-number">05</div>
+                <div class="project-header">
+                    <div class="project-icon"><i class="fas fa-plug"></i></div>
+                    <div class="project-links">
+                        <a href="https://github.com/shubhammm2511" target="_blank" class="project-link-icon" title="GitHub"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+                <h3 class="project-title">MCP Tool-Calling Agent</h3>
+                <p class="project-label">Enterprise-Grade AI Agent with MCP</p>
+                <p class="project-description">
+                    Built an enterprise-grade AI agent using Model Context Protocol (MCP) to securely connect LLMs with enterprise tools and data sources. Implemented tool-calling workflows, vector search capabilities, and scalable multi-agent orchestration for intelligent task execution.
+                </p>
+                <div class="project-tags">
+                    <span class="tag tag-cyan">MCP</span>
+                    <span class="tag tag-purple">Multi-Agent</span>
+                    <span class="tag tag-pink">Tool Calling</span>
+                </div>
+                <div class="project-tech">
+                    <span title="Python"><i class="devicon-python-plain"></i></span>
+                    <span title="OpenAI"><i class="fas fa-brain"></i></span>
+                    <span title="Vector Search"><i class="fas fa-search"></i></span>
+                </div>
+            </div>
+
+            <!-- Project 6: RAG From Scratch -->
+            <div class="project-card glass tilt-card fade-element" data-category="nlp" data-delay="0.2">
+                <div class="project-number">06</div>
+                <div class="project-header">
+                    <div class="project-icon"><i class="fas fa-database"></i></div>
+                    <div class="project-links">
+                        <a href="https://github.com/shubhammm2511" target="_blank" class="project-link-icon" title="GitHub"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+                <h3 class="project-title">RAG From Scratch</h3>
+                <p class="project-label">Retrieval-Augmented Generation System</p>
+                <p class="project-description">
+                    Developed a Retrieval-Augmented Generation (RAG) system from scratch combining semantic search with LLM-powered response generation. Implemented document indexing, embedding pipelines, and context-aware retrieval to improve response accuracy and minimize hallucinations.
+                </p>
+                <div class="project-tags">
+                    <span class="tag tag-cyan">RAG</span>
+                    <span class="tag tag-purple">Embeddings</span>
+                    <span class="tag tag-pink">Semantic Search</span>
+                </div>
+                <div class="project-tech">
+                    <span title="Python"><i class="devicon-python-plain"></i></span>
+                    <span title="ChromaDB"><i class="fas fa-layer-group"></i></span>
+                    <span title="OpenAI"><i class="fas fa-brain"></i></span>
+                </div>
+            </div>
+
+            <!-- Project 7: AI Social Media Agent -->
+            <div class="project-card glass tilt-card fade-element" data-category="agents">
+                <div class="project-number">07</div>
+                <div class="project-header">
+                    <div class="project-icon"><i class="fas fa-share-alt"></i></div>
+                    <div class="project-links">
+                        <a href="https://github.com/shubhammm2511" target="_blank" class="project-link-icon" title="GitHub"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+                <h3 class="project-title">AI Social Media Agent</h3>
+                <p class="project-label">Autonomous Content Management Agent</p>
+                <p class="project-description">
+                    Built an autonomous AI-powered social media agent capable of generating, reviewing, and scheduling content across platforms. Integrated human approval workflows and automated publishing pipelines for streamlined content management.
+                </p>
+                <div class="project-tags">
+                    <span class="tag tag-cyan">Autonomous Agent</span>
+                    <span class="tag tag-purple">Content Gen</span>
+                    <span class="tag tag-pink">Automation</span>
+                </div>
+                <div class="project-tech">
+                    <span title="Python"><i class="devicon-python-plain"></i></span>
+                    <span title="Slack"><i class="devicon-slack-plain"></i></span>
+                    <span title="OAuth"><i class="fas fa-key"></i></span>
+                </div>
+            </div>
+
+            <!-- Project 8: AI Assistant with Memory -->
+            <div class="project-card glass tilt-card fade-element" data-category="agents nlp" data-delay="0.1">
+                <div class="project-number">08</div>
+                <div class="project-header">
+                    <div class="project-icon"><i class="fas fa-memory"></i></div>
+                    <div class="project-links">
+                        <a href="https://github.com/shubhammm2511" target="_blank" class="project-link-icon" title="GitHub"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+                <h3 class="project-title">AI Assistant with Memory</h3>
+                <p class="project-label">Persistent Memory AI Companion</p>
+                <p class="project-description">
+                    Developed an AI assistant with persistent memory capabilities that retains user preferences and conversational context across sessions. Implemented long-term memory storage and personalized response generation for enhanced user experience.
+                </p>
+                <div class="project-tags">
+                    <span class="tag tag-cyan">Persistent Memory</span>
+                    <span class="tag tag-purple">Personalization</span>
+                    <span class="tag tag-pink">Vector DB</span>
+                </div>
+                <div class="project-tech">
+                    <span title="Python"><i class="devicon-python-plain"></i></span>
+                    <span title="Vector DB"><i class="fas fa-database"></i></span>
+                    <span title="OpenAI"><i class="fas fa-brain"></i></span>
+                </div>
+            </div>
+
+            <!-- Project 9: Medical Image Analysis -->
+            <div class="project-card glass tilt-card fade-element" data-category="cv" data-delay="0.2">
+                <div class="project-number">09</div>
+                <div class="project-header">
+                    <div class="project-icon"><i class="fas fa-x-ray"></i></div>
+                    <div class="project-links">
+                        <a href="https://github.com/shubhammm2511" target="_blank" class="project-link-icon" title="GitHub"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+                <h3 class="project-title">Medical Image Analysis</h3>
+                <p class="project-label">AI-Powered DICOM Image Pipeline</p>
+                <p class="project-description">
+                    Built an AI-powered medical imaging pipeline for analyzing DICOM images using deep learning and computer vision techniques. Implemented image preprocessing, segmentation, detection models, and real-time inference workflows using MONAI and PyTorch.
+                </p>
+                <div class="project-tags">
+                    <span class="tag tag-cyan">Medical AI</span>
+                    <span class="tag tag-purple">Deep Learning</span>
+                    <span class="tag tag-pink">Computer Vision</span>
+                </div>
+                <div class="project-tech">
+                    <span title="Python"><i class="devicon-python-plain"></i></span>
+                    <span title="PyTorch"><i class="devicon-pytorch-plain"></i></span>
+                    <span title="OpenCV"><i class="devicon-opencv-plain"></i></span>
+                </div>
+            </div>
+
+            <!-- Project 10: MotoGo -->
+            <div class="project-card glass tilt-card fade-element" data-category="fullstack">
+                <div class="project-number">10</div>
+                <div class="project-header">
+                    <div class="project-icon"><i class="fas fa-motorcycle"></i></div>
+                    <div class="project-links">
+                        <a href="https://github.com/shubhammm2511" target="_blank" class="project-link-icon" title="GitHub"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+                <h3 class="project-title">MotoGo</h3>
+                <p class="project-label">Bike & Scooty Rental Application</p>
+                <p class="project-description">
+                    Designed and developed a full-stack bike and scooty rental management system enabling users to search, book, and manage rentals in real time. Implemented ML models to predict future vehicle availability based on historical booking data, improving booking accuracy.
+                </p>
+                <div class="project-tags">
+                    <span class="tag tag-cyan">Full Stack</span>
+                    <span class="tag tag-purple">ML Predictions</span>
+                    <span class="tag tag-pink">Real-Time</span>
+                </div>
+                <div class="project-tech">
+                    <span title="Node.js"><i class="devicon-nodejs-plain"></i></span>
+                    <span title="Express"><i class="devicon-express-original"></i></span>
+                    <span title="MongoDB"><i class="devicon-mongodb-plain"></i></span>
+                    <span title="Python"><i class="devicon-python-plain"></i></span>
+                </div>
+            </div>
+
+            <!-- Project 11: Handwritten Digit Recognition -->
+            <div class="project-card glass tilt-card fade-element" data-category="cv" data-delay="0.1">
+                <div class="project-number">11</div>
+                <div class="project-header">
+                    <div class="project-icon"><i class="fas fa-pencil-alt"></i></div>
+                    <div class="project-links">
+                        <a href="https://github.com/shubhammm2511" target="_blank" class="project-link-icon" title="GitHub"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+                <h3 class="project-title">Digit Recognition</h3>
+                <p class="project-label">Handwritten Digit Recognition System</p>
+                <p class="project-description">
+                    Developed a deep learning–based handwritten digit recognition system trained on standard image datasets. Applied image preprocessing, feature extraction, and neural network modeling to achieve accurate digit classification, deployed through an interactive interface.
+                </p>
+                <div class="project-tags">
+                    <span class="tag tag-cyan">Deep Learning</span>
+                    <span class="tag tag-purple">CNN</span>
+                    <span class="tag tag-pink">Image Classification</span>
+                </div>
+                <div class="project-tech">
+                    <span title="Python"><i class="devicon-python-plain"></i></span>
+                    <span title="PyTorch"><i class="devicon-pytorch-plain"></i></span>
+                    <span title="OpenCV"><i class="devicon-opencv-plain"></i></span>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════ -->
+    <!-- SKILLS SECTION -->
+    <!-- ═══════════════════════════════════════════ -->
+    <section id="skills" class="glow-section">
+        <h2 class="section-title fade-element">
+            <span class="gradient-text">Tech Arsenal</span>
+        </h2>
+        <p class="section-subtitle fade-element">Technologies I wield to build intelligent systems</p>
+
+        <div class="skills-container">
+
+            <!-- Core Languages -->
+            <div class="skill-category glass fade-element">
+                <h3 class="skill-category-title">
+                    <i class="fas fa-code"></i> Core Languages
+                </h3>
+                <div class="skill-items">
+                    <div class="skill-item"><i class="devicon-python-plain"></i><span>Python</span></div>
+                    <div class="skill-item"><i class="fas fa-database"></i><span>SQL</span></div>
+                    <div class="skill-item"><i class="devicon-cplusplus-plain"></i><span>C/C++</span></div>
+                    <div class="skill-item"><i class="devicon-java-plain"></i><span>Java</span></div>
+                </div>
+            </div>
+
+            <!-- AI / LLMs -->
+            <div class="skill-category glass fade-element" data-delay="0.1">
+                <h3 class="skill-category-title">
+                    <i class="fas fa-brain"></i> AI / LLMs
+                </h3>
+                <div class="skill-items">
+                    <div class="skill-item"><i class="fas fa-link"></i><span>LangChain</span></div>
+                    <div class="skill-item"><i class="fas fa-project-diagram"></i><span>LangGraph</span></div>
+                    <div class="skill-item"><i class="fas fa-search"></i><span>RAG</span></div>
+                    <div class="skill-item"><i class="fas fa-robot"></i><span>LLMs</span></div>
+                    <div class="skill-item"><i class="fas fa-language"></i><span>NLP</span></div>
+                    <div class="skill-item"><i class="fas fa-microchip"></i><span>BERT</span></div>
+                    <div class="skill-item"><i class="fas fa-server"></i><span>Ollama</span></div>
+                    <div class="skill-item"><i class="fas fa-terminal"></i><span>Prompt Eng.</span></div>
+                </div>
+            </div>
+
+            <!-- AI Agents -->
+            <div class="skill-category glass fade-element" data-delay="0.2">
+                <h3 class="skill-category-title">
+                    <i class="fas fa-robot"></i> AI Agents
+                </h3>
+                <div class="skill-items">
+                    <div class="skill-item"><i class="fas fa-cogs"></i><span>Agentic Workflows</span></div>
+                    <div class="skill-item"><i class="fas fa-sitemap"></i><span>LangGraph Orch.</span></div>
+                    <div class="skill-item"><i class="fas fa-layer-group"></i><span>Multi-Step Agents</span></div>
+                    <div class="skill-item"><i class="fas fa-wrench"></i><span>Tool Use</span></div>
+                    <div class="skill-item"><i class="fas fa-sync-alt"></i><span>ReAct Agents</span></div>
+                </div>
+            </div>
+
+            <!-- Model Evaluation -->
+            <div class="skill-category glass fade-element">
+                <h3 class="skill-category-title">
+                    <i class="fas fa-chart-line"></i> Model Evaluation
+                </h3>
+                <div class="skill-items">
+                    <div class="skill-item"><i class="fas fa-clipboard-check"></i><span>Structured Evals</span></div>
+                    <div class="skill-item"><i class="fas fa-balance-scale"></i><span>Benchmarking</span></div>
+                    <div class="skill-item"><i class="fas fa-bullseye"></i><span>Ground Truth</span></div>
+                    <div class="skill-item"><i class="fas fa-percentage"></i><span>Precision/Recall</span></div>
+                    <div class="skill-item"><i class="fas fa-spell-check"></i><span>BLEU/ROUGE</span></div>
+                    <div class="skill-item"><i class="fas fa-microscope"></i><span>LangSmith</span></div>
+                </div>
+            </div>
+
+            <!-- Data & Analytics -->
+            <div class="skill-category glass fade-element" data-delay="0.1">
+                <h3 class="skill-category-title">
+                    <i class="fas fa-chart-bar"></i> Data & Analytics
+                </h3>
+                <div class="skill-items">
+                    <div class="skill-item"><i class="devicon-pandas-plain"></i><span>Pandas</span></div>
+                    <div class="skill-item"><i class="devicon-numpy-plain"></i><span>NumPy</span></div>
+                    <div class="skill-item"><i class="devicon-scikitlearn-plain"></i><span>Scikit-learn</span></div>
+                    <div class="skill-item"><i class="fas fa-tree"></i><span>XGBoost</span></div>
+                    <div class="skill-item"><i class="fas fa-search-plus"></i><span>EDA</span></div>
+                    <div class="skill-item"><i class="fas fa-calculator"></i><span>Statistics</span></div>
+                    <div class="skill-item"><i class="fas fa-chart-area"></i><span>Predictive Analytics</span></div>
+                </div>
+            </div>
+
+            <!-- Visualization & BI -->
+            <div class="skill-category glass fade-element" data-delay="0.2">
+                <h3 class="skill-category-title">
+                    <i class="fas fa-chart-pie"></i> Visualization & BI
+                </h3>
+                <div class="skill-items">
+                    <div class="skill-item"><i class="fas fa-chart-pie"></i><span>Tableau</span></div>
+                    <div class="skill-item"><i class="fas fa-chart-bar"></i><span>Power BI</span></div>
+                    <div class="skill-item"><i class="devicon-streamlit-plain"></i><span>Streamlit</span></div>
+                    <div class="skill-item"><i class="devicon-matplotlib-plain"></i><span>Matplotlib</span></div>
+                </div>
+            </div>
+
+            <!-- MLOps & Tools -->
+            <div class="skill-category glass fade-element">
+                <h3 class="skill-category-title">
+                    <i class="fas fa-tools"></i> MLOps & Tools
+                </h3>
+                <div class="skill-items">
+                    <div class="skill-item"><i class="devicon-docker-plain"></i><span>Docker</span></div>
+                    <div class="skill-item"><i class="devicon-git-plain"></i><span>Git</span></div>
+                    <div class="skill-item"><i class="devicon-github-original"></i><span>GitHub</span></div>
+                    <div class="skill-item"><i class="devicon-fastapi-plain"></i><span>FastAPI</span></div>
+                    <div class="skill-item"><i class="fas fa-exchange-alt"></i><span>REST APIs</span></div>
+                    <div class="skill-item"><i class="fas fa-plug"></i><span>WebSockets</span></div>
+                    <div class="skill-item"><i class="fas fa-infinity"></i><span>CI/CD</span></div>
+                </div>
+            </div>
+
+            <!-- Cloud & Databases -->
+            <div class="skill-category glass fade-element" data-delay="0.1">
+                <h3 class="skill-category-title">
+                    <i class="fas fa-cloud"></i> Cloud & Databases
+                </h3>
+                <div class="skill-items">
+                    <div class="skill-item"><i class="devicon-amazonwebservices-plain-wordmark"></i><span>AWS EC2</span></div>
+                    <div class="skill-item"><i class="devicon-azure-plain"></i><span>Azure</span></div>
+                    <div class="skill-item"><i class="devicon-mongodb-plain"></i><span>MongoDB</span></div>
+                    <div class="skill-item"><i class="devicon-mysql-plain"></i><span>MySQL</span></div>
+                    <div class="skill-item"><i class="devicon-firebase-plain"></i><span>Firebase</span></div>
+                    <div class="skill-item"><i class="fas fa-vector-square"></i><span>Pinecone</span></div>
+                    <div class="skill-item"><i class="devicon-redis-plain"></i><span>Redis</span></div>
+                </div>
+            </div>
+
+            <!-- Automation -->
+            <div class="skill-category glass fade-element" data-delay="0.2">
+                <h3 class="skill-category-title">
+                    <i class="fas fa-magic"></i> Automation
+                </h3>
+                <div class="skill-items">
+                    <div class="skill-item"><i class="fas fa-scroll"></i><span>Python Scripting</span></div>
+                    <div class="skill-item"><i class="fas fa-stream"></i><span>Pipeline Automation</span></div>
+                    <div class="skill-item"><i class="fas fa-sliders-h"></i><span>Workflow Optimization</span></div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════ -->
+    <!-- CERTIFICATIONS SECTION -->
+    <!-- ═══════════════════════════════════════════ -->
+    <section id="certifications" class="glow-section">
+        <h2 class="section-title fade-element">
+            <span class="gradient-text">Certifications</span>
+        </h2>
+        <p class="section-subtitle fade-element">Validated expertise from industry leaders</p>
+
+        <div class="certs-grid">
+            <!-- Tata Group -->
+            <div class="cert-card glass tilt-card fade-element">
+                <div class="cert-shimmer"></div>
+                <div class="cert-icon">
+                    <i class="fas fa-award"></i>
+                </div>
+                <h3 class="cert-title">Data Analytics Certificate</h3>
+                <p class="cert-issuer">
+                    <i class="fas fa-building"></i> Tata Group
+                </p>
+                <div class="cert-badge">
+                    <i class="fas fa-check-circle"></i> Verified
+                </div>
+            </div>
+
+            <!-- AWS -->
+            <div class="cert-card glass tilt-card fade-element" data-delay="0.1">
+                <div class="cert-shimmer"></div>
+                <div class="cert-icon aws-icon">
+                    <i class="devicon-amazonwebservices-plain-wordmark"></i>
+                </div>
+                <h3 class="cert-title">Solutions Architect Certificate</h3>
+                <p class="cert-issuer">
+                    <i class="fab fa-aws"></i> Amazon Web Services
+                </p>
+                <div class="cert-badge">
+                    <i class="fas fa-check-circle"></i> Verified
+                </div>
+            </div>
+
+            <!-- Microsoft Azure -->
+            <div class="cert-card glass tilt-card fade-element" data-delay="0.2">
+                <div class="cert-shimmer"></div>
+                <div class="cert-icon azure-icon">
+                    <i class="devicon-azure-plain"></i>
+                </div>
+                <h3 class="cert-title">Designing & Implementing a Data Science Solution</h3>
+                <p class="cert-issuer">
+                    <i class="fab fa-microsoft"></i> Microsoft Azure
+                </p>
+                <div class="cert-badge">
+                    <i class="fas fa-check-circle"></i> Verified
+                </div>
+            </div>
+
+            <!-- Microsoft Azure AI Engineer -->
+            <div class="cert-card glass tilt-card fade-element" data-delay="0.3">
+                <div class="cert-shimmer"></div>
+                <div class="cert-icon azure-icon">
+                    <i class="devicon-azure-plain"></i>
+                </div>
+                <h3 class="cert-title">Azure AI Engineer Associate</h3>
+                <p class="cert-issuer">
+                    <i class="fab fa-microsoft"></i> Microsoft Certified
+                </p>
+                <p class="cert-date">
+                    <i class="fas fa-calendar-alt"></i> Earned: April 2026
+                </p>
+                <div class="cert-credential">
+                    Credential ID: E11F7F07A1F3687E
+                </div>
+                <div class="cert-badge">
+                    <i class="fas fa-check-circle"></i> Online Verifiable
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════ -->
+    <!-- CONTACT SECTION -->
+    <!-- ═══════════════════════════════════════════ -->
+    <section id="contact" class="glow-section">
+        <h2 class="section-title fade-element">
+            <span class="gradient-text">Let's Connect</span>
+        </h2>
+        <p class="section-subtitle fade-element">Ready to build something amazing together?</p>
+
+        <div class="contact-grid">
+            <div class="contact-info fade-element slide-left">
+                <h3 class="contact-heading">Get in Touch</h3>
+                <p class="contact-text">
+                    I'm actively looking for AI/ML engineering roles and open to office + remote opportunities. Whether you have a project idea, job opportunity, or just want to chat about AI — I'd love to hear from you.
+                </p>
+
+                <div class="contact-items">
+                    <a href="mailto:shubhamtiwari2511@outlook.com" class="contact-item">
+                        <div class="contact-item-icon"><i class="fas fa-envelope"></i></div>
+                        <div>
+                            <strong>Email</strong>
+                            <span>shubhamtiwari2511@outlook.com</span>
+                        </div>
+                    </a>
+                    <a href="tel:+918236028933" class="contact-item">
+                        <div class="contact-item-icon"><i class="fas fa-phone"></i></div>
+                        <div>
+                            <strong>Phone</strong>
+                            <span>+91 8236028933</span>
+                        </div>
+                    </a>
+                    <a href="https://linkedin.com/in/shubham251141" target="_blank" class="contact-item">
+                        <div class="contact-item-icon"><i class="fab fa-linkedin-in"></i></div>
+                        <div>
+                            <strong>LinkedIn</strong>
+                            <span>linkedin.com/in/shubham251141</span>
+                        </div>
+                    </a>
+                    <a href="https://github.com/shubhammm2511" target="_blank" class="contact-item">
+                        <div class="contact-item-icon"><i class="fab fa-github"></i></div>
+                        <div>
+                            <strong>GitHub</strong>
+                            <span>github.com/shubhammm2511</span>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="contact-availability">
+                    <span class="status-dot"></span>
+                    Currently available for office + remote positions
+                </div>
+            </div>
+
+            <form id="contact-form" action="https://formsubmit.co/shubhamtiwari2511@outlook.com" method="POST" class="contact-form glass fade-element slide-right">
+                <input type="hidden" name="_captcha" value="false">
+                <div class="form-group">
+                    <label for="name">Your Name</label>
+                    <input type="text" id="name" name="name" placeholder="Aarav Sharma" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Your Email</label>
+                    <input type="email" id="email" name="email" placeholder="aarav@example.com" required>
+                </div>
+                <div class="form-group">
+                    <label for="subject">Subject</label>
+                    <input type="text" id="subject" name="subject" placeholder="Job Opportunity / Project Collaboration">
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" placeholder="Tell me about the opportunity..." required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary btn-full">
+                    <i class="fas fa-paper-plane"></i> Send Message
+                </button>
+                <div class="form-success" id="formSuccess">
+                    <i class="fas fa-check-circle"></i>
+                    <span>Message sent! I'll get back to you soon.</span>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════ -->
+    <!-- FOOTER -->
+    <!-- ═══════════════════════════════════════════ -->
+    <footer id="footer">
+        <canvas id="footer-particles"></canvas>
+        <div class="footer-main">
+            <div class="footer-grid">
+                <!-- Column 1: Brand -->
+                <div class="footer-brand">
+                    <a href="#hero" class="footer-logo-link">
+                        <span class="footer-name">Shubham Kumar Tiwary</span>
+                    </a>
+                    <p class="footer-tagline">AI Engineer & Data Scientist crafting intelligent systems that make a difference.</p>
+                    <div class="footer-status">
+                        <span class="status-dot"></span>
+                        Open to office + remote opportunities
+                    </div>
+                </div>
+
+                <!-- Column 2: Quick Links -->
+                <div class="footer-nav">
+                    <h4 class="footer-heading">Quick Links</h4>
+                    <ul class="footer-nav-list">
+                        <li><a href="#about"><i class="fas fa-chevron-right"></i> About</a></li>
+                        <li><a href="#experience"><i class="fas fa-chevron-right"></i> Experience</a></li>
+                        <li><a href="#projects"><i class="fas fa-chevron-right"></i> Projects</a></li>
+                        <li><a href="#skills"><i class="fas fa-chevron-right"></i> Skills</a></li>
+                        <li><a href="#certifications"><i class="fas fa-chevron-right"></i> Certifications</a></li>
+                        <li><a href="#contact"><i class="fas fa-chevron-right"></i> Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 3: Connect -->
+                <div class="footer-connect">
+                    <h4 class="footer-heading">Connect</h4>
+                    <div class="footer-social-grid">
+                        <a href="https://github.com/shubhammm2511" target="_blank" class="footer-social-card" aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                            <span>GitHub</span>
+                        </a>
+                        <a href="https://linkedin.com/in/shubham251141" target="_blank" class="footer-social-card" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                            <span>LinkedIn</span>
+                        </a>
+                        <a href="mailto:shubhamtiwari2511@outlook.com" class="footer-social-card" aria-label="Email">
+                            <i class="fas fa-envelope"></i>
+                            <span>Email</span>
+                        </a>
+                        <a href="tel:+918236028933" class="footer-social-card" aria-label="Phone">
+                            <i class="fas fa-phone"></i>
+                            <span>Call</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer Bottom Bar -->
+        <div class="footer-bottom">
+            <p class="footer-copyright">
+                &copy; 2026 Shubham Kumar Tiwary. All rights reserved.
+            </p>
+            <button class="back-to-top" id="backToTop" aria-label="Back to top">
+                <i class="fas fa-arrow-up"></i>
+            </button>
+        </div>
+    </footer>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
