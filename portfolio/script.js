@@ -104,11 +104,10 @@ document.addEventListener('DOMContentLoaded', () => {
     let width, height;
     let mouse = { x: -9999, y: -9999, active: false };
 
-    /** Resize canvas to fill its parent container */
+    /** Resize canvas to fill the full viewport */
     const resize = () => {
-      const parent = canvas.parentElement;
-      width = canvas.width = parent.offsetWidth;
-      height = canvas.height = parent.offsetHeight;
+      width = canvas.width = window.innerWidth;
+      height = canvas.height = window.innerHeight;
     };
 
     window.addEventListener('resize', resize);
@@ -212,14 +211,13 @@ document.addEventListener('DOMContentLoaded', () => {
     };
 
     /* ---------- Mouse tracking ---------- */
-    canvas.addEventListener('mousemove', (e) => {
-      const rect = canvas.getBoundingClientRect();
-      mouse.x = e.clientX - rect.left;
-      mouse.y = e.clientY - rect.top;
+    document.addEventListener('mousemove', (e) => {
+      mouse.x = e.clientX;
+      mouse.y = e.clientY;
       mouse.active = true;
     });
 
-    canvas.addEventListener('mouseleave', () => {
+    document.addEventListener('mouseleave', () => {
       mouse.active = false;
     });
 
@@ -952,6 +950,59 @@ document.addEventListener('DOMContentLoaded', () => {
           content.style.transform = `perspective(1000px) rotateX(${rotateX}deg) scale(${scale})`;
           content.style.transition = 'transform 0.1s ease-out';
         }
+      });
+    });
+  })();
+
+  /* ==========================================================
+     17. PROJECT CARDS 3D SCROLL PARALLAX
+  ========================================================== */
+  (() => {
+    const projectCards = document.querySelectorAll('.project-card');
+    if (!projectCards.length) return;
+
+    window.addEventListener('scroll', () => {
+      const winHeight = window.innerHeight;
+
+      projectCards.forEach((card, i) => {
+        const rect = card.getBoundingClientRect();
+        const cardCenterY = rect.top + rect.height / 2;
+        const distFromCenter = cardCenterY - (winHeight / 2);
+
+        // Alternating rotateY for left/right depth feel
+        const direction = (i % 2 === 0) ? 1 : -1;
+        let rotateY = direction * (distFromCenter / winHeight) * 8;
+        rotateY = Math.max(-8, Math.min(8, rotateY));
+
+        let translateZ = -Math.abs(distFromCenter / winHeight) * 30;
+        translateZ = Math.max(-30, translateZ);
+
+        card.style.transform = `perspective(1200px) rotateY(${rotateY}deg) translateZ(${translateZ}px)`;
+        card.style.transition = 'transform 0.15s ease-out';
+      });
+    });
+  })();
+
+  /* ==========================================================
+     18. SECTION TITLES PARALLAX FLOAT
+  ========================================================== */
+  (() => {
+    const sectionTitles = document.querySelectorAll('.section-title');
+    if (!sectionTitles.length) return;
+
+    window.addEventListener('scroll', () => {
+      const winHeight = window.innerHeight;
+
+      sectionTitles.forEach(title => {
+        const rect = title.getBoundingClientRect();
+        const titleCenterY = rect.top + rect.height / 2;
+        const progress = (titleCenterY - winHeight / 2) / winHeight;
+        
+        const translateY = progress * -15;
+        const scale = 1 + Math.abs(progress) * 0.03;
+
+        title.style.transform = `translateY(${translateY}px) scale(${Math.min(scale, 1.05)})`;
+        title.style.transition = 'transform 0.2s ease-out';
       });
     });
   })();

@@ -511,9 +511,6 @@ body.loading {
   font-size: 1.6rem;
   font-weight: 800;
   letter-spacing: 0.1em;
-  background: var(--gradient-main);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
   margin-bottom: 0.3rem;
 }
 
@@ -632,6 +629,28 @@ body.loaded #app-wrapper {
 }
 
 .logo-last {
+  color: var(--text-heading);
+  -webkit-text-fill-color: var(--text-heading);
+}
+
+/* ---- Per-word Name Coloring ---- */
+.name-shubham {
+  background: linear-gradient(135deg, #00f0ff 0%, #00c4cc 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
+
+.name-kumar {
+  background: linear-gradient(135deg, #8b5cf6 0%, #c084fc 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
+
+.name-tiwary {
   color: var(--text-heading);
   -webkit-text-fill-color: var(--text-heading);
 }
@@ -1983,11 +2002,6 @@ body.loaded #app-wrapper {
   font-family: 'Space Grotesk', sans-serif;
   font-size: 1.6rem;
   font-weight: 800;
-  background: var(--gradient-main);
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  color: transparent;
 }
 
 .footer-tagline {
