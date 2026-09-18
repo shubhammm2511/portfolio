@@ -1,15 +1,9 @@
-__pycache__/
-*.py[cod]
-*$py.class
-*.so
-.Python
-env/
-venv/
+```
+# Compressed files
+*.zip
+
+# Environment files
 .env
-.venv
-*.egg-info/
-dist/
-build/
-.eggs/
-*.egg
-.streamlit/secrets.toml
+.env.local
+*.env.*
+```
