@@ -20,6 +20,10 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/devicon.min.css">
 
     <link rel="stylesheet" href="style.css">
+    
+    <!-- GSAP & ScrollTrigger CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
 </head>
 <body>
     <canvas id="particles-canvas"></canvas>
@@ -747,6 +751,229 @@
                 </div>
             </div>
 
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════ -->
+    <!-- STICKY HORIZONTAL GALLERY SECTION -->
+    <!-- ═══════════════════════════════════════════ -->
+    <section id="gallery-section" class="sticky-gallery-section">
+        <div class="gallery-container">
+            <div class="gallery-header">
+                <h2 class="section-title">
+                    <span class="gradient-text">Featured Work Gallery</span>
+                </h2>
+                <p class="section-subtitle">Scroll to explore my projects horizontally</p>
+            </div>
+            
+            <div class="gallery-track-wrapper">
+                <div class="gallery-track">
+                    <!-- Gallery Item 1 -->
+                    <div class="gallery-item">
+                        <div class="gallery-card glass tilt-card">
+                            <div class="gallery-image">
+                                <div class="gallery-icon-wrapper">
+                                    <i class="fas fa-stethoscope"></i>
+                                </div>
+                            </div>
+                            <div class="gallery-content">
+                                <h3 class="gallery-title">MedQuery AI</h3>
+                                <p class="gallery-label">RAG Chatbot with Full Pipeline Observability</p>
+                                <p class="gallery-description">
+                                    End-to-end RAG-based medical Q&A chatbot using LangChain and OpenAI LLMs with LangSmith tracing, Ground Truth evaluation, and analytics dashboards.
+                                </p>
+                                <div class="gallery-tags">
+                                    <span class="tag tag-cyan">LLM Evaluation</span>
+                                    <span class="tag tag-purple">AI Observability</span>
+                                    <span class="tag tag-pink">Ground Truth</span>
+                                </div>
+                                <div class="gallery-tech">
+                                    <span title="Python"><i class="devicon-python-plain"></i></span>
+                                    <span title="Flask"><i class="devicon-flask-original"></i></span>
+                                    <span title="Docker"><i class="devicon-docker-plain"></i></span>
+                                    <span title="AWS"><i class="devicon-amazonwebservices-plain-wordmark"></i></span>
+                                </div>
+                                <a href="https://github.com/shubhammm2511" target="_blank" class="gallery-link">
+                                    <i class="fab fa-github"></i> View Project
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Gallery Item 2 -->
+                    <div class="gallery-item">
+                        <div class="gallery-card glass tilt-card">
+                            <div class="gallery-image">
+                                <div class="gallery-icon-wrapper">
+                                    <i class="fas fa-wave-square"></i>
+                                </div>
+                            </div>
+                            <div class="gallery-content">
+                                <h3 class="gallery-title">LogPulse</h3>
+                                <p class="gallery-label">Real-Time AI Log Analyzer with Agentic Orchestration</p>
+                                <p class="gallery-description">
+                                    Real-time log analysis application streaming live system logs into an LLM pipeline; automatically classifies severity, detects anomalies, and generates RCA summaries using LangGraph.
+                                </p>
+                                <div class="gallery-tags">
+                                    <span class="tag tag-cyan">Agentic Workflows</span>
+                                    <span class="tag tag-purple">AI Agents</span>
+                                    <span class="tag tag-pink">Real-Time Analytics</span>
+                                </div>
+                                <div class="gallery-tech">
+                                    <span title="Python"><i class="devicon-python-plain"></i></span>
+                                    <span title="FastAPI"><i class="devicon-fastapi-plain"></i></span>
+                                    <span title="Docker"><i class="devicon-docker-plain"></i></span>
+                                    <span title="Streamlit"><i class="devicon-streamlit-plain"></i></span>
+                                </div>
+                                <a href="https://github.com/shubhammm2511" target="_blank" class="gallery-link">
+                                    <i class="fab fa-github"></i> View Project
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Gallery Item 3 -->
+                    <div class="gallery-item">
+                        <div class="gallery-card glass tilt-card">
+                            <div class="gallery-image">
+                                <div class="gallery-icon-wrapper">
+                                    <i class="fas fa-tachometer-alt"></i>
+                                </div>
+                            </div>
+                            <div class="gallery-content">
+                                <h3 class="gallery-title">LLM Speed Lab</h3>
+                                <p class="gallery-label">Local SLM Benchmarking App</p>
+                                <p class="gallery-description">
+                                    Local model evaluation app benchmarking 3–7B parameter LLMs (Llama 3.2, Phi-4, Mistral 7B) using Ollama; measured tokens/sec, TTFT, and peak memory usage with detailed reports.
+                                </p>
+                                <div class="gallery-tags">
+                                    <span class="tag tag-cyan">Model Benchmarks</span>
+                                    <span class="tag tag-purple">SLM</span>
+                                    <span class="tag tag-pink">Performance</span>
+                                </div>
+                                <div class="gallery-tech">
+                                    <span title="Python"><i class="devicon-python-plain"></i></span>
+                                    <span title="Ollama"><i class="fas fa-brain"></i></span>
+                                    <span title="FastAPI"><i class="devicon-fastapi-plain"></i></span>
+                                    <span title="React"><i class="devicon-react-original"></i></span>
+                                </div>
+                                <a href="https://github.com/shubhammm2511" target="_blank" class="gallery-link">
+                                    <i class="fab fa-github"></i> View Project
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Gallery Item 4 -->
+                    <div class="gallery-item">
+                        <div class="gallery-card glass tilt-card">
+                            <div class="gallery-image">
+                                <div class="gallery-icon-wrapper">
+                                    <i class="fas fa-file-medical"></i>
+                                </div>
+                            </div>
+                            <div class="gallery-content">
+                                <h3 class="gallery-title">ICD Coding Assistant</h3>
+                                <p class="gallery-label">Automated Medical Coding with LLMs</p>
+                                <p class="gallery-description">
+                                    Automated ICD-10/11 coding system extracting diagnoses from clinical notes using fine-tuned LLMs; achieved 92% accuracy on test datasets with explainable AI outputs.
+                                </p>
+                                <div class="gallery-tags">
+                                    <span class="tag tag-cyan">Healthcare AI</span>
+                                    <span class="tag tag-purple">Fine-Tuning</span>
+                                    <span class="tag tag-pink">NLP</span>
+                                </div>
+                                <div class="gallery-tech">
+                                    <span title="Python"><i class="devicon-python-plain"></i></span>
+                                    <span title="PyTorch"><i class="devicon-pytorch-plain"></i></span>
+                                    <span title="HuggingFace"><i class="fas fa-face-smile"></i></span>
+                                    <span title="Transformers"><i class="fas fa-robot"></i></span>
+                                </div>
+                                <a href="https://github.com/shubhammm2511" target="_blank" class="gallery-link">
+                                    <i class="fab fa-github"></i> View Project
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Gallery Item 5 -->
+                    <div class="gallery-item">
+                        <div class="gallery-card glass tilt-card">
+                            <div class="gallery-image">
+                                <div class="gallery-icon-wrapper">
+                                    <i class="fas fa-comments"></i>
+                                </div>
+                            </div>
+                            <div class="gallery-content">
+                                <h3 class="gallery-title">Multi-Agent Debate System</h3>
+                                <p class="gallery-label">Collaborative AI Reasoning Framework</p>
+                                <p class="gallery-description">
+                                    Multi-agent debate framework where specialized LLM agents collaborate and critique each other's reasoning; improved answer accuracy by 23% on complex QA benchmarks.
+                                </p>
+                                <div class="gallery-tags">
+                                    <span class="tag tag-cyan">Multi-Agent</span>
+                                    <span class="tag tag-purple">Reasoning</span>
+                                    <span class="tag tag-pink">LLM Collaboration</span>
+                                </div>
+                                <div class="gallery-tech">
+                                    <span title="Python"><i class="devicon-python-plain"></i></span>
+                                    <span title="LangGraph"><i class="fas fa-project-diagram"></i></span>
+                                    <span title="OpenAI"><i class="fas fa-brain"></i></span>
+                                    <span title="Docker"><i class="devicon-docker-plain"></i></span>
+                                </div>
+                                <a href="https://github.com/shubhammm2511" target="_blank" class="gallery-link">
+                                    <i class="fab fa-github"></i> View Project
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Gallery Item 6 -->
+                    <div class="gallery-item">
+                        <div class="gallery-card glass tilt-card">
+                            <div class="gallery-image">
+                                <div class="gallery-icon-wrapper">
+                                    <i class="fas fa-chart-network"></i>
+                                </div>
+                            </div>
+                            <div class="gallery-content">
+                                <h3 class="gallery-title">Neural Network Visualizer</h3>
+                                <p class="gallery-label">Interactive Deep Learning Visualization Tool</p>
+                                <p class="gallery-description">
+                                    Interactive web application visualizing neural network architectures, training dynamics, and activation maps in real-time; supports TensorFlow and PyTorch models.
+                                </p>
+                                <div class="gallery-tags">
+                                    <span class="tag tag-cyan">Visualization</span>
+                                    <span class="tag tag-purple">Deep Learning</span>
+                                    <span class="tag tag-pink">Web App</span>
+                                </div>
+                                <div class="gallery-tech">
+                                    <span title="TypeScript"><i class="devicon-typescript-plain"></i></span>
+                                    <span title="React"><i class="devicon-react-original"></i></span>
+                                    <span title="TensorFlow"><i class="devicon-tensorflow-original"></i></span>
+                                    <span title="D3.js"><i class="fas fa-chart-area"></i></span>
+                                </div>
+                                <a href="https://github.com/shubhammm2511" target="_blank" class="gallery-link">
+                                    <i class="fab fa-github"></i> View Project
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="gallery-indicators">
+                <div class="indicator active" data-index="0"></div>
+                <div class="indicator" data-index="1"></div>
+                <div class="indicator" data-index="2"></div>
+                <div class="indicator" data-index="3"></div>
+                <div class="indicator" data-index="4"></div>
+                <div class="indicator" data-index="5"></div>
+            </div>
+            
+            <div class="gallery-progress">
+                <div class="progress-bar" id="galleryProgressBar"></div>
+            </div>
         </div>
     </section>
 

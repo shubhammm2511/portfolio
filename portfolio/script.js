@@ -1015,3 +1015,122 @@ document.addEventListener('DOMContentLoaded', () => {
     'color:#00f0ff;font-size:14px;font-weight:bold;'
   );
 });
+
+/* ==========================================================
+   15. STICKY HORIZONTAL GALLERY WITH GSAP SCROLLTRIGGER
+========================================================== */
+(() => {
+  // Safety check: ensure GSAP is loaded
+  if (typeof gsap === 'undefined' || typeof ScrollTrigger === 'undefined') {
+    console.warn('%c⚠️ GSAP or ScrollTrigger not loaded. Gallery animation skipped.', 'color: #f472b6; font-weight: bold;');
+    return;
+  }
+
+  const gallerySection = document.querySelector('#gallery-section');
+  const galleryTrack = document.querySelector('.gallery-track');
+  const galleryItems = document.querySelectorAll('.gallery-item');
+  const indicators = document.querySelectorAll('.indicator');
+  const progressBar = document.querySelector('#galleryProgressBar');
+
+  if (!gallerySection || !galleryTrack || galleryItems.length === 0) {
+    console.warn('%c⚠️ Gallery elements not found. Skipping initialization.', 'color: #f472b6; font-weight: bold;');
+    return;
+  }
+
+  // Register ScrollTrigger plugin
+  gsap.registerPlugin(ScrollTrigger);
+
+  // Small delay to ensure DOM is fully rendered and widths are accurate
+  // This is critical for correct pinning and scroll calculations
+  setTimeout(() => {
+    // Calculate total scroll distance
+    const trackWidth = galleryTrack.scrollWidth;
+    const viewportWidth = window.innerWidth;
+    const scrollDistance = trackWidth - viewportWidth;
+
+    // Only proceed if we have valid dimensions
+    if (scrollDistance <= 0) {
+      console.warn('%c⚠️ Track width is not greater than viewport. Adjusting layout may be needed.', 'color: #f472b6; font-weight: bold;');
+      return;
+    }
+
+    // Create the main timeline for horizontal scroll
+    const galleryTimeline = gsap.timeline({
+      scrollTrigger: {
+        trigger: gallerySection,
+        start: 'top top',
+        end: () => `+=${scrollDistance}`,
+        pin: true,
+        scrub: 1,
+        anticipatePin: 1,
+        invalidateOnRefresh: true,
+        onEnter: () => {
+          gallerySection.classList.add('pinned');
+        },
+        onLeave: () => {
+          gallerySection.classList.remove('pinned');
+        },
+        onEnterBack: () => {
+          gallerySection.classList.add('pinned');
+        },
+        onLeaveBack: () => {
+          gallerySection.classList.remove('pinned');
+        },
+      },
+    });
+
+    // Animate the track horizontally
+    galleryTimeline.to(galleryTrack, {
+      x: () => -scrollDistance,
+      ease: 'none',
+      duration: 1,
+    });
+
+    // Update indicators and progress bar during scroll
+    galleryTimeline.eventCallback('onUpdate', () => {
+      const progress = galleryTimeline.progress();
+      
+      // Update progress bar
+      if (progressBar) {
+        progressBar.style.width = `${progress * 100}%`;
+      }
+
+      // Update active indicator
+      const totalItems = galleryItems.length;
+      const activeIndex = Math.min(
+        Math.floor(progress * totalItems),
+        totalItems - 1
+      );
+
+      indicators.forEach((indicator, index) => {
+        if (index === activeIndex) {
+          indicator.classList.add('active');
+        } else {
+          indicator.classList.remove('active');
+        }
+      });
+    });
+
+    // Add click functionality to indicators
+    indicators.forEach((indicator, index) => {
+      indicator.addEventListener('click', () => {
+        const targetProgress = index / (indicators.length - 1);
+        galleryTimeline.progress(targetProgress);
+      });
+    });
+
+    // Refresh ScrollTrigger on window resize to recalculate dimensions
+    let resizeTimeout;
+    window.addEventListener('resize', () => {
+      clearTimeout(resizeTimeout);
+      resizeTimeout = setTimeout(() => {
+        ScrollTrigger.refresh();
+      }, 250);
+    });
+
+    console.log(
+      '%c🎨 Gallery Section Initialized with GSAP ScrollTrigger',
+      'color: #00f0ff; font-weight: bold;'
+    );
+  }, 100); // 100ms delay ensures DOM is fully rendered
+})();
